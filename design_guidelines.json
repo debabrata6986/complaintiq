@@ -1,0 +1,94 @@
+{
+  "theme": "light",
+  "archetype": "Soft Utility Dashboard",
+  "colors": {
+    "primary": "#2563EB",
+    "secondary": "#3B82F6",
+    "success": "#22C55E",
+    "warning": "#F59E0B",
+    "danger": "#EF4444",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "text_primary": "#0F172A",
+    "text_secondary": "#64748B",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "headings": "Outfit",
+    "body": "Inter",
+    "h1": "text-4xl sm:text-5xl tracking-tight font-semibold text-slate-900",
+    "h2": "text-2xl sm:text-3xl tracking-tight font-semibold text-slate-800",
+    "h3": "text-xl sm:text-2xl font-medium text-slate-800",
+    "h4": "text-lg sm:text-xl font-medium text-slate-700",
+    "body_text": "text-base text-slate-600 leading-relaxed",
+    "small_text": "text-sm text-slate-500",
+    "overline": "text-xs font-bold uppercase tracking-[0.2em] text-slate-400"
+  },
+  "spacing_and_layout": {
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "card_padding": "p-6",
+    "section_padding": "py-16 sm:py-24",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "radius": "12px"
+  },
+  "components": {
+    "card": "bg-white rounded-[12px] shadow-[0_2px_10px_rgb(0,0,0,0.04)] border border-slate-100",
+    "button_primary": "bg-[#2563EB] hover:bg-blue-700 text-white rounded-[12px] px-4 py-2 font-medium transition-colors inline-flex items-center justify-center",
+    "button_secondary": "bg-blue-50 hover:bg-blue-100 text-[#2563EB] rounded-[12px] px-4 py-2 font-medium transition-colors inline-flex items-center justify-center",
+    "input": "border border-slate-200 rounded-[12px] px-4 py-2.5 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all w-full text-sm",
+    "label": "block text-sm font-medium text-slate-700 mb-1.5",
+    "badge": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium",
+    "stepper": "flex flex-col gap-4 relative before:absolute before:inset-y-0 before:left-[11px] before:w-px before:bg-slate-200"
+  },
+  "pages_to_build": [
+    "Landing Page",
+    "Auth (Login/Register)",
+    "Customer Dashboard",
+    "Submit Complaint Form",
+    "Complaint Analysis (AI Results Cards)",
+    "Complaint Tracking (Timeline)",
+    "Knowledge Base Search",
+    "Admin Dashboard",
+    "User Profile"
+  ],
+  "libraries": {
+    "icons": "lucide-react",
+    "charts": "recharts",
+    "animations": "framer-motion",
+    "components": "shadcn/ui primitives"
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1644088379091-d574269d422f",
+      "category": "background",
+      "description": "Abstract tech network background for the landing page hero section."
+    },
+    {
+      "url": "https://images.pexels.com/photos/31869537/pexels-photo-31869537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "avatar",
+      "description": "Professional female headshot for customer/executive profiles."
+    },
+    {
+      "url": "https://images.pexels.com/photos/26872232/pexels-photo-26872232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "avatar",
+      "description": "Professional male headshot for manager/admin profiles."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1603714228681-b399854b8f80",
+      "category": "hero",
+      "description": "Smiling customer support agent, ideal for the 'Support Team' section or Auth page sidebars."
+    }
+  ],
+  "instructions_to_main_agent": [
+    "CRITICAL: Add `data-testid` attributes to ALL interactive and key informational elements for robust testing.",
+    "Follow the Light Theme exclusively as per user constraints. Do not implement a dark mode.",
+    "Ensure clean, simple, and modern SaaS aesthetics (inspired by Linear, Stripe, Notion). Keep tasks within 3-5 clicks.",
+    "Use Outfit for headings and Inter for body text to maintain a professional yet approachable tone.",
+    "Implement 12px border radius across all cards, dialogs, and inputs. Use extremely soft shadows.",
+    "For the real-time AI progress, implement a vertical stepper displaying sequential text updates ('Analyzing...' 'Understanding...' 'Detecting Intent...').",
+    "Use Recharts for the Admin Dashboard to visualize 5 charts: Complaint Trend (line), Department Distribution (pie/donut), Priority Distribution (bar), Monthly Complaints (area), and Resolution Time (bar).",
+    "Build the Complaint Analysis page heavily utilizing grid layouts (Bento/Control Room) to display Summary, Intent, Entities, Duplicate Score, AI Recommendations, etc. in distinct cards.",
+    "Keep animations minimal—use Framer Motion primarily for smooth state transitions (e.g., tabs, modal entry, stepper progress) rather than decorative motion.",
+    "Ensure the UI uses .js/.jsx files (not TypeScript) as requested in the workspace setup."
+  ]
+}
