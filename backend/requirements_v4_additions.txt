@@ -1,0 +1,16 @@
+# ComplaintIQ v4.0 — new Python dependencies (do NOT merge into requirements.txt)
+# Install with: pip install -r requirements_v4_additions.txt
+
+# Phase 1 — Multilingual
+langdetect>=1.0.9
+deep-translator>=1.11.4
+
+# Phase 2 — Voice
+# (Groq Whisper uses the existing groq package — no additional installs needed)
+
+# Phase 5 — Multi-Modal
+pymupdf>=1.24.0
+pytesseract>=0.3.10
+ffmpeg-python>=0.2.0
+pdfminer.six>=20221105
+websockets

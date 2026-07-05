@@ -1,6 +1,6 @@
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
-import { Bell, BookOpen, Gauge, LayoutDashboard, ListChecks, LogOut, PlusCircle, ShieldCheck, User } from "lucide-react";
+import { Bell, BookOpen, Gauge, LayoutDashboard, ListChecks, LogOut, PlusCircle, ShieldCheck, User, Globe, Mic, Building2, BrainCircuit, Paperclip, Zap, Activity } from "lucide-react";
 
 const NAV_BY_ROLE = {
   customer: [
@@ -20,12 +20,16 @@ const NAV_BY_ROLE = {
     { to: "/admin", label: "Analytics", icon: Gauge, testid: "nav-admin" },
     { to: "/complaints", label: "All Complaints", icon: ListChecks, testid: "nav-complaints" },
     { to: "/knowledge", label: "Knowledge Base", icon: BookOpen, testid: "nav-kb" },
+    { to: "/self-healing", label: "Self-Healing Engine", icon: Activity, testid: "nav-selfhealing" },
+    { to: "/realtime-test", label: "Realtime Assistant", icon: Zap, testid: "nav-realtime" },
     { to: "/profile", label: "Profile", icon: User, testid: "nav-profile" },
   ],
   admin: [
     { to: "/admin", label: "Analytics", icon: Gauge, testid: "nav-admin" },
     { to: "/complaints", label: "All Complaints", icon: ListChecks, testid: "nav-complaints" },
     { to: "/knowledge", label: "Knowledge Base", icon: BookOpen, testid: "nav-kb" },
+    { to: "/self-healing", label: "Self-Healing Engine", icon: Activity, testid: "nav-selfhealing" },
+    { to: "/realtime-test", label: "Realtime Assistant", icon: Zap, testid: "nav-realtime" },
     { to: "/profile", label: "Profile", icon: User, testid: "nav-profile" },
   ],
 };
